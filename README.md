@@ -1,10 +1,8 @@
-# Website Profil Mahendra Saputra: Tugas 3 (DOM & Event Handling)
+# Website Profil Mahendra Saputra
 
 Nama: Mahendra Saputra · NIM: A12.2025.07417 · S1 Sistem Informasi, Universitas Dian Nuswantoro
 
-Tugas 3 melanjutkan halaman profil dari Tugas 1 dan Tugas 2. Saya menambahkan tiga fitur interaktif dengan JavaScript murni memakai pola **PILIH → DENGARKAN → UBAH** dari materi Minggu 7.
-
-## 1. Analisis proyek awal (hasil Tugas 2)
+## 1. Analisis proyek awal 
 
 | Bagian | Kondisi awal | Tindakan di Tugas 3 |
 |---|---|---|
@@ -173,41 +171,3 @@ Jika repositori Tugas 2 sudah ada, cukup perbarui repositori itu.
 2. Seret **isi** folder `portfolio` (bukan foldernya): `index.html`, `README.md`, `css`, `js`, `images`.
 3. Tulis pesan commit, misalnya `Tugas 3: dark mode, FAQ, dan validasi form`, lalu klik **Commit changes**.
 4. Website tidak lagi memakai `js/jquery.min.js`. Jika file itu masih ada di repositori, buka file tersebut lalu hapus lewat ikon titik tiga **→ Delete file**.
-
-**Lewat Git di terminal:**
-
-Buat satu commit untuk setiap fitur, sesuai saran slide 26. Dari riwayat Git, dosen bisa melihat urutan pengerjaan Anda. Contoh:
-
-```bash
-cd portfolio
-git add css/bootstrap.min.css js/bootstrap.bundle.min.js
-git commit -m "Ganti ke Bootstrap 5.3 dan hapus jQuery"
-git add index.html css/style.css js/script.js
-git commit -m "Tambah fitur mode gelap, FAQ, dan validasi form"
-git add README.md
-git commit -m "Perbarui dokumentasi Tugas 3"
-git push
-```
-
-Untuk riwayat yang lebih rinci, buat commit setiap kali satu fitur selesai dan berjalan di browser.
-
-Untuk repositori baru, jalankan `git init`, `git branch -M main`, dan `git remote add origin https://github.com/MahendraSp56/NAMA-REPO.git` sebelum `git push -u origin main`.
-
-## 8. Panduan hosting (GitHub Pages)
-
-1. Di repositori, buka **Settings → Pages**.
-2. **Source:** Deploy from a branch. **Branch:** `main`, folder `/ (root)`. Klik **Save**.
-3. Tunggu 1 sampai 3 menit sampai tab **Actions** menunjukkan centang hijau.
-4. Alamat situs muncul di **Settings → Pages**, dengan pola `https://mahendrasp56.github.io/NAMA-REPO/`.
-5. Buka alamat itu di laptop dan HP. Coba ketiga fitur, lalu cek Console (F12) tidak ada error.
-6. Jika tampilan lama masih muncul, tekan **Ctrl+F5** untuk memuat ulang tanpa cache.
-
-## 9. Checklist pengumpulan
-
-- [ ] Minimal 2 fitur berfungsi (ada 3: mode gelap, FAQ, validasi form)
-- [ ] Console tanpa error
-- [ ] `script.js` eksternal terhubung (`<script src="js/script.js">` di akhir body)
-- [ ] Kode memakai `querySelector`, `addEventListener`, dan mengubah `textContent` / `classList` / `hidden`
-- [ ] Source code sudah di-commit ke GitHub
-- [ ] GitHub Pages aktif dan tautan bisa dibuka dari HP
-- [ ] Tautan repositori dan tautan website tercantum sesuai instruksi dosen
