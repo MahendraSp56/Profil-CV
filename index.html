@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- Meta wajib: encoding karakter dan viewport responsif -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Profil pribadi Mahendra Saputra, mahasiswa S1 Sistem Informasi Universitas Dian Nuswantoro yang tertarik pada pengembangan web dan pengolahan data.">
     <meta name="author" content="Mahendra Saputra">
     <title>Mahendra Saputra - Profil Pribadi</title>
 
-    <!-- Font (opsional, butuh internet). Jika offline, browser memakai font sistem. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 
-    <!-- Bootstrap 5.3.3 disimpan lokal agar tetap berjalan tanpa internet -->
     <link rel="stylesheet" href="bootstrap.min.css">
-    <!-- Stylesheet eksternal milik website ini; dimuat setelah Bootstrap agar dapat menimpa gaya bawaan -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER & NAVIGASI ================= -->
     <header id="atas" class="site-header">
         <nav id="menu" class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navigasi utama">
             <div class="container">
@@ -29,9 +24,7 @@
                     <img src="Foto-Profil.jpeg" alt="" class="brand-avatar" width="36" height="36">
                     <span>Mahendra Saputra</span>
                 </a>
-                <!-- Tombol tema dan tombol menu mobile -->
                 <div class="nav-actions order-lg-last">
-                    <!-- FITUR 1: tombol mode gelap/terang (dipilih oleh script.js lewat #tema) -->
                     <button id="tema" class="btn-tema" type="button">
                         <span id="tema-ikon" aria-hidden="true">&#9790;</span>
                         <span id="tema-teks">Mode Gelap</span>
@@ -54,7 +47,6 @@
             </div>
         </nav>
 
-        <!-- Hero: perkenalan singkat -->
         <div class="hero">
             <div class="container">
                 <div class="row align-items-center">
@@ -73,7 +65,6 @@
                     </div>
                     <div class="col-lg-5 order-1 order-lg-2">
                         <figure class="hero-photo">
-                            <!-- Gambar sebagai link: membuka foto ukuran penuh di tab baru -->
                             <a href="Foto-Profil.jpeg" target="_blank" rel="noopener" title="Lihat foto ukuran penuh">
                                 <img src="Foto-Profil.jpeg" alt="Foto profil Mahendra Saputra" width="853" height="1280">
                             </a>
@@ -87,7 +78,6 @@
 
     <main>
 
-        <!-- ================= TENTANG SAYA ================= -->
         <section id="tentang" class="section">
             <div class="container">
                 <div class="section-head">
@@ -150,7 +140,6 @@
             </div>
         </section>
 
-        <!-- ================= RIWAYAT PENDIDIKAN ================= -->
         <section id="pendidikan" class="section section-alt">
             <div class="container">
                 <div class="section-head">
@@ -224,7 +213,6 @@
             </div>
         </section>
 
-        <!-- ================= KEAHLIAN ================= -->
         <section id="keahlian" class="section">
             <div class="container">
                 <div class="section-head">
@@ -297,7 +285,6 @@
                     <li>Pemecahan masalah</li>
                 </ul>
 
-                <!-- Informasi pendukung (aside) dari halaman asli -->
                 <aside id="info-tambahan" class="learning-box">
                     <div class="row align-items-center">
                         <div class="col-md-5 mb-3 mb-md-0">
@@ -317,7 +304,6 @@
             </div>
         </section>
 
-        <!-- ================= PROYEK ================= -->
         <section id="proyek" class="section section-alt">
             <div class="container">
                 <div class="section-head">
@@ -415,7 +401,6 @@
             </div>
         </section>
 
-        <!-- ================= FAQ (FITUR 2) ================= -->
         <section id="faq" class="section">
             <div class="container">
                 <div class="section-head">
@@ -424,7 +409,6 @@
                     <p class="section-desc">Klik pertanyaan untuk membuka atau menutup jawabannya.</p>
                 </div>
 
-                <!-- Setiap tombol .faq-tanya mengendalikan satu jawaban lewat aria-controls -->
                 <div class="faq-list">
                     <div class="faq-item">
                         <h3 class="faq-judul">
@@ -489,7 +473,6 @@
             </div>
         </section>
 
-        <!-- ================= KONTAK (FITUR 3: VALIDASI FORM) ================= -->
         <section id="kontak" class="section section-alt">
             <div class="container">
                 <div class="section-head">
@@ -512,7 +495,6 @@
                     </div>
 
                     <div class="col-lg-8">
-                        <!-- novalidate: pemeriksaan isian dilakukan oleh script.js, bukan oleh browser -->
                         <form id="form-kontak" class="card contact-card" action="#" method="get" novalidate>
                             <div class="card-body">
                                 <div class="row g-3">
@@ -541,7 +523,6 @@
                                             <input class="form-check-input" type="radio" id="fkeperluan3" name="fkeperluan" value="Lainnya">
                                             <label class="form-check-label" for="fkeperluan3">Lainnya</label>
                                         </div>
-                                        <!-- hidden: pesan ini disembunyikan sampai script.js menampilkannya -->
                                         <p id="error-keperluan" class="pesan-error" hidden>Pilih salah satu keperluan.</p>
                                     </fieldset>
 
@@ -587,7 +568,6 @@
 
                                 <p class="small text-muted-custom mt-3"><span class="req">*</span> wajib diisi</p>
 
-                                <!-- Area notifikasi hasil validasi (diisi oleh script.js) -->
                                 <div id="form-status" role="status" aria-live="polite"></div>
 
                                 <div class="d-flex flex-wrap form-buttons">
@@ -603,7 +583,6 @@
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <div class="container">
             <div class="row align-items-center">
@@ -628,11 +607,8 @@
         </div>
     </footer>
 
-    <!-- Tombol kembali ke atas (muncul setelah halaman digulir) -->
     <a href="#atas" id="btn-atas" class="btn-top" aria-label="Kembali ke atas">&uarr;</a>
 
-    <!-- JavaScript: Bootstrap 5.3 (menu lipat di HP), lalu script.js milik website ini.
-         Diletakkan di akhir body agar semua elemen HTML sudah tersedia saat script dijalankan. -->
     <script src="bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
